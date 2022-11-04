@@ -14,7 +14,7 @@ module.exports = async ({ getNamedAccounts, deployments }) => {
   const { deployer } = await getNamedAccounts();
   console.log(deployer);
   const args = ["0x8d657c70B6F4aB242ab80938ee3ec299EDbCb94e"];
-  const raffle = await deploy("UniswapV2Factory", {
+  const raffle = await deploy("TokenFactory", {
     from: deployer,
     args: args,
     log: true,
