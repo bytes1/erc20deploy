@@ -7,7 +7,7 @@ require("hardhat-gas-reporter");
 require("hardhat-contract-sizer");
 require("dotenv").config();
 /** @type import('hardhat/config').HardhatUserConfig */
-const RINKEBY_RPC_URL = "https://orbital-ultra-mountain.matic-testnet.discover.quiknode.pro/9e5b846689d86deebb2e49b7d7cfeffca8b7ac23/";
+const MATIC_RPC_URL = "https://orbital-ultra-mountain.matic-testnet.discover.quiknode.pro/9e5b846689d86deebb2e49b7d7cfeffca8b7ac23/";
 const PRIVATE_KEY = process.env.PRIVATE_KEY;
 const ETHERSCAN_API_KEY = process.env.ETHERSCAN_API_KEY;
 module.exports = {
@@ -16,8 +16,8 @@ module.exports = {
       chainId: 31337,
       blockConfirmations: 1,
     },
-    rinkeby: {
-      url: RINKEBY_RPC_URL,
+    matic: {
+      url: MATIC_RPC_URL,
       accounts: [PRIVATE_KEY],
       chainId: 80001,
       blockConfirmations: 6,
